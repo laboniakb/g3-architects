@@ -16,16 +16,47 @@
     cursor: pointer;
 }
 
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main>section {
+    margin-top: 130px;
+
+}
+
+.text-light-gray {
+    color: #727272;
+}
+
+.section-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.d-flex {
+    display: flex;
+}
+
+
+.b-flex {
+    display: flex;
+}
+
 /* Header style */
 header {
     background-color: rgba(244, 144, 14, .10);
     padding: 50px 240px;
+
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
 }
 
 .nav-title {
@@ -74,6 +105,140 @@ nav li a {
     width: 100%;
 }
 
+/* feature section style */
+.teams {
+    align-items: center;
+}
+
+.team-img-conatiner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.our-features {
+    margin-left: 130px;
+    /* max-width */
+}
+
+#text-primary {
+    font-weight: 500;
+    color: #727272;
+}
+
+#features {
+    color: #FF900E;
+}
+
+
+
+/* Experience section */
+
+.ex {
+    margin-top: 130px;
+    display: flex;
+    gap: 100px;
+    padding-left: 30px;
+}
+
+.ex .section-title {
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.ones .card {
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.ex-img img {
+    height: 90%;
+    margin-left: 90px;
+}
+
+.two {
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    width: 300px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+
+.two h2 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.two p {
+    font-size: 1.5rem;
+}
+
+
+/* Icon section*/
+.icon {
+    padding-left: 50px;
+}
+
+.three {
+    display: flex;
+    justify-content: space-around;
+}
+
+.three .card {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 30px;
+}
+
+.three .card-title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 5px;
+}
+
+.three .efg {
+    font-size: 2.8rem;
+    color: #424242;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Sponsors section */
+.sponsors {
+    text-align: center;
+}
+
+.sponsors-img {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+}
+
+.sponsors-img img {
+    width: 165px;
+}
+
+/* Footer section */
+
+footer {
+    margin-top: 80PX;
+    text-align: center;
+    width: 100%;
+    padding: 30px;
+    background-color: #FFF4E7;
+
+}
+
+
 /* Responsive Media Query */
 /* For Mobile Devices */
 @media screen and (max-width:576px) {
@@ -88,7 +253,7 @@ nav li a {
 }
 
 /* Responsive for Tablet or medium devices */
-@media screen and (max-width:992px) and(min-width:576px) {
+@media screen and (max-width:992px) and (min-width:576px) {
     header {
         padding: 50px;
     }
@@ -97,3 +262,6 @@ nav li a {
         flex-direction: column;
     }
 }
+
+/* responsive media queries */
+/* mobile devices */
